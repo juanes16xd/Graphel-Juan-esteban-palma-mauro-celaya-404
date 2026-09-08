@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============ HEADER ============ */
+.main-header {
+  background-color: #1f2530;
+  border-bottom: 4px solid #1e9de3;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #1e9de3;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 34px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #1e9de3;
+}
+
+/* ============ HERO (index) ============ */
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(30, 34, 44, 0.55), rgba(30, 34, 44, 0.55)), url("../images/cabecera.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 130px 20px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 800;
+  margin-bottom: 22px;
+  text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #eaeaea;
+}
+
+/* ============ NEWSLETTER BAR ============ */
+.newsletter {
+  background-color: #1f2530;
+  padding: 30px 0;
+}
+
+.newsletter-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.newsletter h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0;
+}
+
+.newsletter-form input[type="email"] {
+  width: 280px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter-form button {
+  background-color: #e8501f;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 0 3px 3px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: default;
+}
+
+/* ============ FEATURES (index) ============ */
+.features {
+  padding: 70px 0;
+  background-color: #f2f2f2;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+}
+
+.feature-item {
+  max-width: 320px;
+}
+
+.feature-item img {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 18px;
+  object-fit: contain;
+}
+
+.feature-item h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ============ FOOTER ============ */
+.main-footer {
+  background-color: #1e9de3;
+  color: #ffffff;
+  text-align: center;
+  padding: 26px 0;
+  font-size: 14px;
+}
+
+/* ============ PAGE LAYOUT (nosotros/servicios/contacto) ============ */
+.page-content {
+  padding: 50px 0 70px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.content-main h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #1f2530;
+}
+
+.content-main p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #444;
+}
+
+.info-box {
+  background-color: #35404f;
+  color: #f0f0f0;
+  padding: 24px 26px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+
+.info-box p {
+  color: #f0f0f0;
+  margin-bottom: 0;
+}
+
+.content-image img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* Sidebar */
+.sidebar-box {
+  background-color: #35404f;
+  color: #ffffff;
+  padding: 26px;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+
+.sidebar-box h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.sidebar-box p {
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+.sidebar-map img {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+/* ============ SERVICIOS ============ */
+.service-card {
+  background-color: #e8e8e8;
+  padding: 26px 28px;
+  margin-bottom: 22px;
+  border-radius: 3px;
+}
+
+.service-card h2 {
+  font-size: 19px;
+  margin-bottom: 12px;
+  color: #1f2530;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.service-card .precio {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0;
+}
+
+/* ============ CONTACTO / FORM ============ */
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.btn-enviar {
+  display: block;
+  width: 100%;
+  background-color: #e8501f;
+  color: #ffffff;
+  border: none;
+  padding: 14px 0;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: default;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .newsletter-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .newsletter-form input[type="email"] {
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-form button {
+    border-radius: 3px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
